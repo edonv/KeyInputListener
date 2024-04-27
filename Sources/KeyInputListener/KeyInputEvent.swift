@@ -12,7 +12,6 @@ public enum KeyInputEvent {
     case backspace
     case space
     case enter
-    case tab, backtab
     case escape
     
     case specialKey(SpecialKey)

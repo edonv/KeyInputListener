@@ -72,10 +72,6 @@ extension _TextInput {
                 backspace()
             case .enter, .carriageReturn:
                 keyInputEventHandler?(.enter)
-            case .tab:
-                keyInputEventHandler?(.tab)
-            case .backTab:
-                keyInputEventHandler?(.backtab)
             default:
                 keyInputEventHandler?(.specialKey(specialKey))
             }
