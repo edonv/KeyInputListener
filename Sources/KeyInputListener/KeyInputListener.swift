@@ -14,7 +14,6 @@ typealias CrossPlatView = NSView
 #endif
 
 class _TextInput: CrossPlatView {
-    var keyboardConfig: KeyInputConfig = .init()
     var keyInputEventHandler: ((KeyInputEvent) -> Void)? = nil
     
     private func newCharacter(_ char: Character) {
