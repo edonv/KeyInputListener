@@ -42,6 +42,8 @@ extension _TextInput: UIKeyInput {
     
     override var canBecomeFirstResponder: Bool { true }
     
+    var hasText: Bool { true }
+    
     func insertText(_ text: String) {
         for char in text {
             if char.isNewline {
