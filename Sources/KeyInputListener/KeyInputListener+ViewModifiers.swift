@@ -36,7 +36,7 @@ extension View {
     ) -> some View {
         self.keyInputListener(isFocused: isFocused) { event in
             switch event {
-            case .character(let char, _):
+            case .character(let char):
                 text.wrappedValue.append(char)
             case .backspace:
                 text.wrappedValue.removeLast()
